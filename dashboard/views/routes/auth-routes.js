@@ -1,4 +1,4 @@
-const { DASH_URL, ID } = require('../../config.js');
+const { DASH_URL, ID } = require('../../../config.js');
 const authClient = require('../../auth-client.js');
 const sessions = require('../../sessions.js');
 const express = require('express');

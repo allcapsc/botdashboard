@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const {
   EMBED_COLOR
-} = require("../config");
+} = require("../../config");
 
 module.exports = {
   name: "ping",

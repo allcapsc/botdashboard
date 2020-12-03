@@ -7,6 +7,6 @@ module.exports = {
   SECRET: "tXtFyaB0JoNpVjUdtDZfcNWC9jSt2GsA",
   EMBED_COLOR: "BLACK",
   PREFIX: "bd!",
-  DASH_URL: "https://botdashboard-1.edgarsanchez10.repl.co",
+  DASH_URL: "https://botdashboard.sherlockbot.xyx",
   MONGO_URL: "mongodb+srv://edgartesting:Edgar009@cluster0.kyzec.mongodb.net/edgartesting?retryWrites=true&w=majority"
 };

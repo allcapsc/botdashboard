@@ -23,11 +23,11 @@ client.on("ready", () => {
 client.on("warn", info => console.log(info));
 client.on("error", console.error);
 
-const generalCommandFiles = readdirSync(join(__dirname, "general")).filter(file =>
+const generalCommandFiles = readdirSync(join(__dirname, "commands/general")).filter(file =>
   file.endsWith(".js")
 );
 for (const file of generalCommandFiles) {
-  const command = require(join(__dirname, "general", `${file}`));
+  const command = require(join(__dirname, "commands/general", `${file}`));
   client.commands.set(command.name, command);
 }
 
@@ -59,4 +59,4 @@ client.on("message", async message => {
 
 module.exports = client;
 
-require("./app.js");
+require("./dashboard/app.js");
