@@ -4,6 +4,7 @@ const express = require('express');
 const methodOverride = require('method-override');
 const middleware = require('./middleware.js');
 const rateLimit = require('./rate-limiter.js');
+const { PORT } = require("../config.js")
 
 const authRoutes = require('./views/routes/auth-routes.js');
 const rootRoutes = require('./views/routes/root-routes.js');
@@ -26,5 +27,5 @@ app.use('/',
 );
 app.all('*', (req, res) => res.redirect('/'));
 
-const port = 8000;
+const port = PORT;
 app.listen(port, () => console.log(`Server started on port ${port}`))

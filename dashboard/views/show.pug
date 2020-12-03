@@ -14,7 +14,7 @@ main.page.lanidng-page
       img.avatar.background-image(src=guild.iconURL({ dynamic: true, size: 128 }))
       .about-me
         h2 #{guild.name}
-      hr
+        hr
       form(action='/servers/' + guild.id + '/general?_method=PUT', method="POST")
         .form-group
           label.d-flex.justify-content-center Command Prefix
