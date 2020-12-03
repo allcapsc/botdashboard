@@ -1,4 +1,4 @@
-const client = require("../../index.js")
+const client = require("../../../index.js")
 const express = require("express");
 const { validateGuild, validateUser } = require("../../middleware");
 const guilds = require('../../data/guilds.js');
