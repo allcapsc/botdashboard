@@ -1,0 +1,38 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+  title Dashboard - Bot Dashboard
+  style
+    include assets/bootstrap/css/bootstrap.min.css
+  link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato:300,400,700')
+  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css')
+include blocks/navbar.pug
+main.page.lanidng-page
+  section.portfolio-block.block-intro
+    .container
+      img.avatar.background-image(src=user.avatarUrl(512))
+      .about-me
+        p
+          | Hello! 
+          strong #{user.username}
+          | . This is a bot dashboard that is open source and anyone can remix to use or to add onto their own bot.
+      hr
+      p.lead Pick a server
+    .container
+      .guilds.row.d-flex.justify-content-center
+        each guild in guilds
+          .col-2.mb-4.float-left.d-flex.justify-content-center
+            a(href='/servers/' + guild.id)
+              .icon.round.shadow
+                if guild.icon
+                  img.round(alt=guild.name, src=guild.iconURL({ dynamic: true, size: 64 }))
+                else
+                  p.text-center.abbr #{guild.nameAcronym}
+script
+  include assets/js/jquery.min.js
+script
+  include assets/bootstrap/js/bootstrap.min.js
+script(src="https:/cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js")
+script
+  include assets/js/script.min.js

@@ -1,0 +1,32 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+  title Show - Bot Dashboard
+  style
+    include assets/bootstrap/css/bootstrap.min.css
+  link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato:300,400,700')
+  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css')
+include blocks/navbar.pug
+main.page.lanidng-page
+  section.portfolio-block.block-intro
+    .container
+      img.avatar.background-image(src=guild.iconURL({ dynamic: true, size: 128 }))
+      .about-me
+        h2 #{guild.name}
+      hr
+      form(action='/servers/' + guild.id + '/general?_method=PUT', method="POST")
+        .form-group
+          label.d-flex.justify-content-center Command Prefix
+          input.form-control-small(name="prefix", value="bd!", type="text", maxlength="5")
+        br
+        .d-flex.justify-content-center
+          button.btn.btn-primary.btn-light
+            span.ml-1 Submit
+script
+  include assets/js/jquery.min.js
+script
+  include assets/bootstrap/js/bootstrap.min.js
+script(src="https:/cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js")
+script
+  include assets/js/script.min.js

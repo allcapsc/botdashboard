@@ -1,0 +1,29 @@
+{
+  "name": "botdashboard",
+  "version": "1.0.0",
+  "description": "A botdashboard for a opensource.",
+  "main": "index.js",
+  "author": "allcaps",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookies": "^0.8.0",
+    "disco-oauth": "^4.2.7",
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.2.3",
+    "jquery": "^3.5.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.11.2",
+    "pug": "^3.0.0",
+    "quick.db": "^7.1.3",
+    "rate-limit-mongo": "^2.3.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "12.x"
+  }
+}
