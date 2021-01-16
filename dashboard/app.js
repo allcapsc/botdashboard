@@ -2,13 +2,13 @@ const bodyParser = require('body-parser');
 const cookies = require('cookies');
 const express = require('express');
 const methodOverride = require('method-override');
-const middleware = require('./middleware.js');
-const rateLimit = require('./rate-limiter.js');
-const { PORT } = require("../config.js")
+const middleware = require('./middleware');
+const rateLimit = require('./rate-limiter');
+const { PORT } = require("../config")
 
-const authRoutes = require('./views/routes/auth-routes.js');
-const rootRoutes = require('./views/routes/root-routes.js');
-const dashboardRoutes = require('./views/routes/dashboard-routes.js');
+const authRoutes = require('./views/routes/auth-routes');
+const rootRoutes = require('./views/routes/root-routes');
+const dashboardRoutes = require('./views/routes/dashboard-routes');
 
 const app = express();
 

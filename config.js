@@ -1,6 +1,3 @@
-const dotenv = require("dotenv");
-dotenv.config();
-
 module.exports = {
   TOKEN: "TOKEN",
   ID: "ID",

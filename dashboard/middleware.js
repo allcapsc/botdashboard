@@ -1,4 +1,4 @@
-const sessions = require('./sessions.js');
+const sessions = require('./sessions');
 
 module.exports.updateGuilds = async (req, res, next) => {
   try {

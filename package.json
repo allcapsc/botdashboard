@@ -1,10 +1,10 @@
 {
   "name": "botdashboard",
   "version": "1.0.0",
-  "description": "A botdashboard for a opensource.",
+  "description": "A bot dashboard that's opensource.",
   "main": "index.js",
   "author": "allcaps",
-  "private": true,
+  "private": false,
   "dependencies": {
     "body-parser": "^1.19.0",
     "cookies": "^0.8.0",

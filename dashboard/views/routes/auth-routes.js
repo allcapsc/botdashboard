@@ -1,6 +1,6 @@
-const { DASH_URL, ID } = require('../../../config.js');
-const authClient = require('../../auth-client.js');
-const sessions = require('../../sessions.js');
+const { DASH_URL, ID } = require('../../../config');
+const authClient = require('../../auth-client');
+const sessions = require('../../sessions');
 const express = require('express');
 const router = express.Router();
 const inviteURL = `https://discord.com/api/oauth2/authorize?client_id=${ID}&permissions=8&scope=bot&redirect_uri=${DASH_URL}/`;

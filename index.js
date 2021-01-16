@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const { TOKEN, PREFIX, EMBED_COLOR, MONGO_URL } = require("./config.js")
+const { TOKEN, PREFIX, EMBED_COLOR, MONGO_URL } = require("./config")
 const mongoose = require('mongoose');
 const { readdirSync } = require("fs");
 const { join } = require("path");

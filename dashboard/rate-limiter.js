@@ -1,6 +1,6 @@
 const rateLimit = require('express-rate-limit');
 const RateLimitStore = require('rate-limit-mongo');
-const { MONGO_URL } = require("../config.js")
+const { MONGO_URL } = require("../config")
 
 module.exports = rateLimit({
   max: 300,

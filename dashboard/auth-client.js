@@ -1,4 +1,4 @@
-const { DASH_URL, ID, SECRET } = require('../config.js');
+const { DASH_URL, ID, SECRET } = require('../config');
 const OAuthClient = require('disco-oauth');
 
 const AuthClient = new OAuthClient(ID, SECRET);

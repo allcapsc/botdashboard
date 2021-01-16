@@ -1,7 +1,7 @@
-const client = require("../../../index.js")
+const client = require("../../../index")
 const express = require("express");
 const { validateGuild, validateUser } = require("../../middleware");
-const guilds = require('../../data/guilds.js');
+const guilds = require('../../data/guilds');
 const router = express.Router();
 const db = require("quick.db");
 
